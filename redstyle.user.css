@@ -1,0 +1,177 @@
+/* ==UserStyle==
+@name         flat & dark theme for red
+@namespace    github.com/SharpestPebble/css
+@version      1.0.0
+==/UserStyle== */
+
+@-moz-document domain("redacted.ch") {
+*, :after, :before {
+  transition-property: none !important;
+  transform: none !important;
+  animation: none !important;
+  text-shadow: none !important;
+  box-shadow: none !important
+}
+
+#collage .comment span, #forums .search_form .cat_list td.forum_cat, #menu ul li, #menu ul li a, #rules h4, #rules h5, #top10 tr.torrent:not(.gt10_torrent) td:first-of-type, #torrents table:not(.forum_post) .colhead_dark, #upload #showdnu, #userform td:not(.label)>strong, .box h3, .box h4, .box h5, .donation_info_title, .head, .inbox_message .head, .noty_message, .sidebar .colhead_dark, .sidebar .head, .tooltipster-default .tooltipster-content, .torrent_table .group_info, .torrent_table tr.edition, .vertical_space.box .head, body, h1, h2, h3, input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], span.size10, span.size4, span.size5, span.size6, span.size7, span.size8, span.size9, table.forum_post .colhead_dark td, textarea {
+  font-family: Noto Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+#collage .comment span, #user table.recent tr:nth-of-type(2) a, code, pre, samp, ul.collage_images li a {
+  font-family: monospace
+}
+
+.inbox_message .head, .vertical_space.box .head, table.forum_post .colhead_dark td {
+  background: #202020;
+  border: 0;
+  color: #d9d9d9
+}
+
+body {
+  background-image: none;
+  background-color: #0b0b0b
+}
+
+#content {
+  border: 0;
+  background: 0 0
+}
+
+.torrent_table tr.edition {
+  background: #0e0e0e
+}
+
+#artist .edit_form, #artist_information, #better table .rowb, #changelog .changelog_entry, #collage .create_form, #edit_collage, #filter_form, #friends .friends_table, #inbox #messageform table .rowb, #inbox #searchbox, #log_table .rowb, #questions .box2, #reportform, #reports .box, #rules table .rowb, #similar_artist_map, #staff .box, #top10 .torrent_table .rowb, #torrents .edit_form, #torrents .torrent_description, #torrents .vote_matches_table .rowb, #upload #content>div, #upload #dnulist .rowb, #user .edit_form:not(#userform), #userhistory table:not(.forum_post):not(.users_reports_table) .rowb, .collage_table .rowb, .forum_list.border .rowb, .inbox_message, .main_column table.forum_post, .request_table .rowb, .sidebar .box, .torrent_table .rowb, .torrent_table tr.group_torrent:not(.edition), .torrent_table tr.torrent, .users_reports_table, .users_reports_table .rowb, .vertical_space.box, .wiki_log_table .rowb, table.forum_post, table.staff .rowb {
+  background: 0 0
+}
+
+#better table tr.colhead td, #better table tr.colhead_dark td, #inbox #messageform table tr.colhead td, #inbox #messageform table tr.colhead_dark td, #log_table tr.colhead td, #log_table tr.colhead_dark td, #rules table tr.colhead td, #rules table tr.colhead_dark td, #top10 .torrent_table tr.colhead td, #top10 .torrent_table tr.colhead_dark td, #torrents .vote_matches_table tr.colhead td, #torrents .vote_matches_table tr.colhead_dark td, #upload #dnulist tr.colhead td, #upload #dnulist tr.colhead_dark td, #userhistory table:not(.forum_post):not(.users_reports_table) tr.colhead td, #userhistory table:not(.forum_post):not(.users_reports_table) tr.colhead_dark td, .collage_table tr.colhead td, .collage_table tr.colhead_dark td, .forum_list.border tr.colhead td, .forum_list.border tr.colhead_dark td, .request_table tr.colhead td, .request_table tr.colhead_dark td, .torrent_table tr.colhead td, .torrent_table tr.colhead_dark td, .users_reports_table tr.colhead td, .users_reports_table tr.colhead_dark td, .wiki_log_table tr.colhead td, .wiki_log_table tr.colhead_dark td, table.staff tr.colhead td, table.staff tr.colhead_dark td {
+  color: #7fffd4
+}
+
+.torrent_table tr.edition td {
+  color: #3cffbb !important
+}
+
+#artist_information .colhead, #artist_information .head, #better table .rowa, #inbox #messageform table .rowa, #log_table .rowa, #rules table .rowa, #similar_artist_map .colhead, #similar_artist_map .head, #top10 .torrent_table .rowa, #torrents .torrent_description .colhead, #torrents .torrent_description .head, #torrents .vote_matches_table .rowa, #upload #dnulist .rowa, #upload #dnulist tr:not(.colhead):not(.colhead_dark):nth-of-type(2n) td, #userhistory table:not(.forum_post):not(.users_reports_table) .rowa, .collage_table .rowa, .forum_list.border .rowa, .request_table .rowa, .request_table tr:not(.colhead):not(.colhead_dark):nth-of-type(2n) td, .torrent_table .rowa, .users_reports_table .rowa, .wiki_log_table .rowa, table.staff .rowa {
+  background: #111
+}
+
+ul.collage_images img:hover {
+  border-color: #303234
+}
+
+#forums .search_form .cat_list td.forum_cat strong, #userform td:not(.label)>strong, .donation_info_title, .head {
+  color: #98fb98
+}
+
+#rules h4, #rules h5, #torrents table:not(.forum_post) .colhead_dark, .forum_index tr.colhead td, .sidebar .colhead_dark, .sidebar .head, table.forum_list tr.colhead td {
+  color: #b3ffb3
+}
+
+.box h4, .noty_buttons a, .quoteheader, h3, h3 a {
+  color: #c4ffd8
+}
+
+h2 a {
+  color: #53ffa9
+}
+
+h2 a:hover {
+  color: #98fb98
+}
+
+a {
+  color: #f5fffa;
+  font-weight: 500
+}
+
+.header h2 a, .noty_buttons a:hover, a:hover, h3 a:hover {
+  color: #86ccff
+}
+
+#torrents .vote_matches_table .colhead a:hover, .header h2 a:hover, strong.artists_label {
+  color: #9696f4
+}
+
+.r00, .r01, .r02, .r03, .r04, .r05, .r06, .r07, .r08, .r09, .r10, .r20, .r50, .r99 {
+  color: #9affff
+}
+
+.forum_index a:hover, .tags a:hover {
+  color: #98fb98
+}
+
+.forum_post.forum_unread .colhead_dark td {
+  border-bottom: 0;
+  background: #1b4d2a
+}
+
+.rippywrap {
+  display: none !important
+}
+
+#logo a, #menu ul li a:hover, #nav_better a, #nav_bookmarks a, #nav_comments a, #nav_friends a, #nav_inbox a, #nav_logchecker a, #nav_notifications a, #nav_posts a, #nav_staffinbox a, #nav_subscriptions a, #nav_subscriptions.new-subscriptions a, #nav_uploaded a, .remove a, .sign img, .unread, .unread_locked_sticky, .unread_sticky, .vote_album_down, .vote_album_up, a.small_downvote, a.small_upvote, a.vote_artist_down, a.vote_artist_up, a.vote_tag_down, a.vote_tag_up, ul#userinfo_username li:not(#nav_userinfo) a {
+  filter: hue-rotate(210deg)
+}
+
+.remove a:hover {
+  filter: hue-rotate(170deg)
+}
+
+.tl_notice {
+  color: #0ff !important
+}
+
+#rules .rules li .rule_short, #rules div ul li>strong, .torrent_table .discog span>a:hover, .torrent_table .discog strong>a:hover, .torrent_table .group_info>a:hover {
+  color: #5b6cff
+}
+
+.torrent_links_block a, .torrent_table .group_torrent>td>span a, .torrent_table span a {
+  color: #5bc3e6 !important
+}
+
+#userform .sidebar #settings_sections a:hover, .torrent_links_block a:hover, .torrent_table .group_torrent>td>span a:hover, .torrent_table span a:hover {
+  color: #9bb8fd !important
+}
+
+.forum_post.forum_unread .colhead_dark td, .forum_post.sticky_post .colhead_dark td {
+  color: #d3d3d3
+}
+
+.forum_post.sticky_post .colhead_dark td {
+  background: #2e420f !important
+}
+
+.forum_post.sticky_post .sticky_post_label {
+  color: #ffc11b !important
+}
+
+#userinfo {
+  border-bottom: 0
+}
+
+.torrent_table .discog strong>a {
+  font-weight: bolder
+}
+
+.torrentdetails table .colhead_dark td {
+  color: #5f9ea0 !important
+}
+
+.tl_reported {
+  color: Tomato !important
+}
+
+.tl_notice {
+  color: #ffc11b !important
+}
+
+.tl_snatched {
+  color: Salmon !important
+}
+
+#better table tr.colhead_dark td, #better table tr.colhead td, #inbox #messageform table tr.colhead_dark td, #inbox #messageform table tr.colhead td, #log_table tr.colhead_dark td, #log_table tr.colhead td, #rules table tr.colhead_dark td, #rules table tr.colhead td, #top10 .torrent_table tr.colhead_dark td, #top10 .torrent_table tr.colhead td, #torrents .vote_matches_table tr.colhead_dark td, #torrents .vote_matches_table tr.colhead td, #upload #dnulist tr.colhead_dark td, #upload #dnulist tr.colhead td, #userhistory table:not(.forum_post):not(.users_reports_table) tr.colhead_dark td, #userhistory table:not(.forum_post):not(.users_reports_table) tr.colhead td, .collage_table tr.colhead_dark td, .collage_table tr.colhead td, .forum_list.border tr.colhead_dark td, .forum_list.border tr.colhead td, .request_table tr.colhead_dark td, .request_table tr.colhead td, .torrent_table tr.colhead_dark td, .torrent_table tr.colhead td, .users_reports_table tr.colhead_dark td, .users_reports_table tr.colhead td, .wiki_log_table tr.colhead_dark td, .wiki_log_table tr.colhead td, table.staff tr.colhead_dark td, table.staff tr.colhead td {
+  background: #0d0d0d
+}
+}
