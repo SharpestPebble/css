@@ -19,7 +19,7 @@
   }
 
   #collage .comment span, #forums .search_form .cat_list td.forum_cat, #menu ul li, #menu ul li a, #rules h4, #rules h5, #top10 tr.torrent:not(.gt10_torrent) td:first-of-type, #torrents table:not(.forum_post) .colhead_dark, #upload #showdnu, #userform td:not(.label)>strong, .box h3, .box h4, .box h5, .donation_info_title, .head, .inbox_message .head, .noty_message, .sidebar .colhead_dark, .sidebar .head, .tooltipster-default .tooltipster-content, .torrent_table .group_info, .torrent_table tr.edition, .vertical_space.box .head, body, h1, h2, h3, input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], span.size10, span.size4, span.size5, span.size6, span.size7, span.size8, span.size9, table.forum_post .colhead_dark td, textarea {
-    font-family: Noto Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+    font-family: Noto Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif
   }
 
   #collage .comment span, #user table.recent tr:nth-of-type(2) a, code, pre, samp, ul.collage_images li a {
