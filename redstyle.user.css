@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name          flat & dark theme for red
 @namespace     github.com/SharpestPebble/css
-@version       1.0.6
+@version       1.0.7
 @preprocessor  stylus
 @var checkbox enable_anim 'Disable CSS effects' 1
 @var checkbox enable_ratio 'Disable ratio/class colors' 1
@@ -91,7 +91,7 @@
     font-weight: 500
   }
 
-  .header h2 a, .noty_buttons a:hover, a:hover, h3 a:hover {
+  .header h2 a, .noty_buttons a:hover, a:hover, h3 a:hover, #rules h4 a:hover, #rules h5 a:hover, #torrents table:not(.forum_post) .colhead_dark a:hover, .colhead a:hover, .sidebar .colhead_dark a:hover, .sidebar .head a:hover {
     color: #86ccff
   }
 
