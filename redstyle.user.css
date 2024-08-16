@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name          flat & dark theme for red
 @namespace     github.com/SharpestPebble/css
-@version       1.0.7
+@version       1.0.8
 @preprocessor  stylus
 @var checkbox enable_anim 'Disable CSS effects' 1
 @var checkbox enable_ratio 'Disable ratio/class colors' 1
@@ -22,7 +22,7 @@
     font-family: Noto Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif
   }
 
-  #collage .comment span, #user table.recent tr:nth-of-type(2) a, code, pre, samp, ul.collage_images li a {
+  #user table.recent tr:nth-of-type(2) a, code, pre, samp, ul.collage_images li a {
     font-family: monospace
   }
 
