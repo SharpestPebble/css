@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name          flat & dark theme for red
 @namespace     github.com/SharpestPebble/css
-@version       1.0.8
+@version       1.0.9
 @preprocessor  stylus
 @var checkbox enable_anim 'Disable CSS effects' 1
 @var checkbox enable_ratio 'Disable ratio/class colors' 1
@@ -118,7 +118,7 @@
     display: none !important
   }
 
-  #logo a, #menu ul li a:hover, #menu ul li a, #nav_better a, #nav_bookmarks a, #nav_comments a, #nav_friends a, #nav_inbox a, #nav_logchecker a, #nav_notifications a, #nav_posts a, #nav_staffinbox a, #nav_subscriptions a, #nav_subscriptions.new-subscriptions a, #nav_uploaded a, .remove a, .sign img, .unread, .unread_locked_sticky, .unread_sticky, .vote_album_down, .vote_album_up, a.small_downvote, a.small_upvote, a.vote_artist_down, a.vote_artist_up, a.vote_tag_down, a.vote_tag_up, ul#userinfo_username li:not(#nav_userinfo) a, table.forum_post .colhead_dark td a[id*=quote], table.forum_post .colhead_dark td .post_id {
+  #logo a, #menu ul li a:hover, #menu ul li a, #nav_better a, #nav_bookmarks a, #nav_comments a, #nav_friends a, #nav_inbox a, #nav_logchecker a, #nav_notifications a, #nav_posts a, #nav_staffinbox a, #nav_subscriptions a, #nav_subscriptions.new-subscriptions a, #nav_uploaded a, .remove a, .sign img, .unread, .unread_locked_sticky, .unread_sticky, .vote_album_down, .vote_album_up, a.small_downvote, a.small_upvote, a.vote_artist_down, a.vote_artist_up, a.vote_tag_down, a.vote_tag_up, ul#userinfo_username li:not(#nav_userinfo) a, table.forum_post .colhead_dark td a[id*=quote], table.forum_post .colhead_dark td .post_id, .center_poll, #forums div.box.thin.clear .colhead_dark {
     filter: hue-rotate(210deg)
   }
 
