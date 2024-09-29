@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name          flat & dark theme for red
 @namespace     github.com/SharpestPebble/css
-@version       1.0.9
+@version       1.0.10
 @preprocessor  stylus
 @var checkbox enable_anim 'Disable CSS effects' 1
 @var checkbox enable_ratio 'Disable ratio/class colors' 1
@@ -176,6 +176,10 @@
 
   .tl_snatched {
     color: Salmon !important
+  }
+
+  .alertbar a {
+    background-color: #04111b
   }
 
   #better table tr.colhead_dark td, #better table tr.colhead td, #inbox #messageform table tr.colhead_dark td, #inbox #messageform table tr.colhead td, #log_table tr.colhead_dark td, #log_table tr.colhead td, #rules table tr.colhead_dark td, #rules table tr.colhead td, #top10 .torrent_table tr.colhead_dark td, #top10 .torrent_table tr.colhead td, #torrents .vote_matches_table tr.colhead_dark td, #torrents .vote_matches_table tr.colhead td, #upload #dnulist tr.colhead_dark td, #upload #dnulist tr.colhead td, #userhistory table:not(.forum_post):not(.users_reports_table) tr.colhead_dark td, #userhistory table:not(.forum_post):not(.users_reports_table) tr.colhead td, .collage_table tr.colhead_dark td, .collage_table tr.colhead td, .forum_list.border tr.colhead_dark td, .forum_list.border tr.colhead td, .request_table tr.colhead_dark td, .request_table tr.colhead td, .torrent_table tr.colhead_dark td, .torrent_table tr.colhead td, .users_reports_table tr.colhead_dark td, .users_reports_table tr.colhead td, .wiki_log_table tr.colhead_dark td, .wiki_log_table tr.colhead td, table.staff tr.colhead_dark td, table.staff tr.colhead td {
