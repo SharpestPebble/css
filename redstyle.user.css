@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name          flat & dark theme for red
 @namespace     github.com/SharpestPebble/css
-@version       1.0.10
+@version       1.0.11
 @preprocessor  stylus
 @var checkbox enable_anim 'Disable CSS effects' 1
 @var checkbox enable_ratio 'Disable ratio/class colors' 1
 ==/UserStyle== */
 
-@-moz-document domain("redacted.ch") {
+@-moz-document domain("redacted.sh") {
   if enable_anim {
     *, :after, :before {
       transition-property: none !important;
