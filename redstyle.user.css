@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name          flat & dark theme for red
 @namespace     github.com/SharpestPebble/css
-@version       1.0.11
+@version       1.0.12
 @preprocessor  stylus
 @var checkbox enable_anim 'Disable CSS effects' 1
 @var checkbox enable_ratio 'Disable ratio/class colors' 1
@@ -124,6 +124,10 @@
 
   .remove a:hover {
     filter: hue-rotate(170deg)
+  }
+
+  a.small_upvote:hover, a.vote_artist_up:hover, a.vote_tag_up:hover, a.vote_tag_down:hover, a.vote_artist_down:hover, a.vote_album_down:hover {
+    filter: hue-rotate(240deg)
   }
 
   .tl_notice {
