@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name          flat & dark theme for red
 @namespace     github.com/SharpestPebble/css
-@version       1.0.12
+@version       1.0.13
 @preprocessor  stylus
 @var checkbox enable_anim 'Disable CSS effects' 1
 @var checkbox enable_ratio 'Disable ratio/class colors' 1
@@ -112,6 +112,10 @@
   .forum_post.forum_unread .colhead_dark td {
     border-bottom: 0;
     background: #1b4d2a
+  }
+
+  .log_deleted a, span[style*="color: red;"] a {
+    color: #d87093
   }
 
   .rippywrap {
