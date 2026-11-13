@@ -1,7 +1,7 @@
 /* ==UserStyle==
  @name          flat & dark theme for red
  @namespace     github.com/SharpestPebble/css
- @version       2.0.14
+ @version       2.0.26
  @preprocessor  stylus
  @var checkbox enable_anim 'Disable CSS effects' 1
  @var checkbox enable_ratio 'Disable ratio/class colors' 1
@@ -18,7 +18,7 @@
    edition = #281d2a
    fg = #ded0e1
    link = #84afda
-   muted = #a179a9
+   muted = #c2a8c7
    teal = #4ea79e
    torrent-link = #4ea79e
    h3 = #c3a9c8
@@ -602,5 +602,77 @@
 
    .forum_list.border tr:not([id*="post"]) td {
      color: muted;
+   }
+
+   input[type="checkbox"] + label {
+	 color: muted;
+   }
+
+   input[type="checkbox"]:checked + label {
+     color: fg;
+   }
+
+   input[type="checkbox"] {
+     appearance: none;
+     background-color: muted;
+     border: 1px solid h3;
+     width: 14px;
+     height: 14px;
+     border-radius: 5px;
+     position: relative;
+     cursor: pointer;
+     vertical-align: middle;
+     margin: 3px;
+   }
+
+   input[type="checkbox"]:checked {
+     background-color: teal;
+     border-color: muted;
+   }
+
+   input[type="checkbox"]:checked::after {
+     content: "";
+     position: absolute;
+     left: 4px;
+     top: 0px;
+     width: 3px;
+     height: 8px;
+     border: solid bg-deep;
+     border-width: 0 2px 2px 0;
+     transform: rotate(45deg) !important;
+   }
+
+   input[type="radio"] {
+     appearance: none;
+     background-color: muted;
+     border: 1px solid h3;
+     width: 14px;
+     height: 14px;
+     border-radius: 50%;
+     position: relative;
+     cursor: pointer;
+     vertical-align: middle;
+     margin: 3px;
+     display: inline-block;
+   }
+
+   input[type="radio"]:hover {
+     border-color: muted;
+   }
+
+   input[type="radio"]:checked {
+     border-color: muted;
+     background-color: teal;
+   }
+
+   input[type="radio"]:checked::after {
+     content: "";
+     position: absolute;
+     top: 3px;
+     left: 3px;
+     width: 6px;
+     height: 6px;
+     border-radius: 50%;
+     background-color: bg-deep;
    }
  }
