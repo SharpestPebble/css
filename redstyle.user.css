@@ -1,7 +1,7 @@
 /* ==UserStyle==
  @name          flat & dark theme for red
  @namespace     github.com/SharpestPebble/css
- @version       2.0.13
+ @version       2.0.14
  @preprocessor  stylus
  @var checkbox enable_anim 'Disable CSS effects' 1
  @var checkbox enable_ratio 'Disable ratio/class colors' 1
@@ -242,7 +242,7 @@
      border-top: 1px solid bg-inset !important;
    }
 
-   :root .tooltipster-box, #requests .search_form, blockquote {
+   :root .tooltipster-box, #requests .search_form, blockquote, #searchforum div, #searchthread div {
      border: 1px solid bg-inset;
    }
 
