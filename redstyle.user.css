@@ -1,7 +1,7 @@
 /* ==UserStyle==
  @name          flat & dark theme for red
  @namespace     github.com/SharpestPebble/css
- @version       2.0.11
+ @version       2.0.12
  @preprocessor  stylus
  @var checkbox enable_anim 'Disable CSS effects' 1
  @var checkbox enable_ratio 'Disable ratio/class colors' 1
@@ -606,5 +606,9 @@
      background-image: none;
      color: critical;
      font-weight: 600;
+   }
+
+   .forum_list.border tr:not([id*="post"]) td {
+     color: #afafaf;
    }
  }
