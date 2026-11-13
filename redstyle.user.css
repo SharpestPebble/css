@@ -1,3 +1,11 @@
+/* ==UserStyle==
+ @name          flat & dark theme for red
+ @namespace     github.com/SharpestPebble/css
+ @version       2.0.10
+ @preprocessor  stylus
+ @var checkbox enable_anim 'Disable CSS effects' 1
+ @var checkbox enable_ratio 'Disable ratio/class colors' 1
+ @var select theme 'Theme' {'Monochrome': 'monochrome', 'Tomorrow Night': 'tomorrow-night', 'Amethyst': 'amethyst'}
  ==/UserStyle== */
 
  if theme == 'amethyst'
@@ -100,3 +108,503 @@
        transition-property: none !important;
        transform: none !important;
        animation: none !important;
+       text-shadow: none !important;
+       box-shadow: none !important;
+     }
+   }
+
+   if enable_ratio {
+     .r00, .r01, .r02, .r03, .r04, .r05, .r06, .r07, .r08, .r09, .r10, .r20, .r50, .r99 {
+       color: h3;
+     }
+   }
+
+   /* fonts */
+   #collage .comment span, #forums .search_form .cat_list td.forum_cat, #menu ul li, #menu ul li a, #rules h4, #rules h5, #top10 tr.torrent:not(.gt10_torrent) td:first-of-type, #torrents table:not(.forum_post) .colhead_dark, #upload #showdnu, #userform td:not(.label)>strong, .box h3, .box h4, .box h5, .donation_info_title, .head, .inbox_message .head, .noty_message, .sidebar .colhead_dark, .sidebar .head, :root .tooltipster-content, .torrent_table .group_info, .torrent_table tr.edition, .vertical_space.box .head, body, h1, h2, h3, input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], span.size10, span.size4, span.size5, span.size6, span.size7, span.size8, span.size9, table.forum_post .colhead_dark td, textarea {
+     font-family: Noto Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+   }
+
+   #user table.recent tr:nth-of-type(2) a, code, pre, samp, ul.collage_images li a {
+     font-family: monospace;
+   }
+
+   /* backgrounds */
+   body {
+     color: #999;
+     background-image: none;
+     background-color: bg;
+   }
+
+   #artist .edit_form, #artist_information, #userinfo_minor li a, ul#userinfo_username li:not(#nav_userinfo) a {
+     background: 0 0;
+   }
+
+   #inbox #messageform table td {
+     background: bg-deep;
+   }
+
+   .torrent_table tr.edition {
+     background: edition;
+   }
+
+   #noty_bottomRight_layout_container li {
+     background: noty !important;
+   }
+
+   #better table tr.colhead td, #better table tr.colhead_dark td, #inbox #messageform table tr.colhead_dark td, #log_table tr.colhead td, #log_table tr.colhead_dark td, #rules table tr.colhead td, #rules table tr.colhead_dark td, #top10 .torrent_table tr.colhead td, #top10 .torrent_table tr.colhead_dark td, #torrents .vote_matches_table tr.colhead td, #torrents .vote_matches_table tr.colhead_dark td, #upload #dnulist tr.colhead td, #upload #dnulist tr.colhead_dark td, #userhistory table:not(.forum_post):not(.users_reports_table) tr.colhead td, #userhistory table:not(.forum_post):not(.users_reports_table) tr.colhead_dark td, .collage_table tr.colhead_dark td, .forum_list.border tr.colhead td, .forum_list.border tr.colhead_dark td, .request_table tr.colhead td, .request_table tr.colhead_dark td, .torrent_table tr.colhead td, .users_reports_table tr.colhead td, .users_reports_table tr.colhead_dark td, .wiki_log_table tr.colhead td, .wiki_log_table tr.colhead_dark td, table.staff tr.colhead td, table.staff tr.colhead_dark td {
+     background: bg-inset;
+     color: fg;
+   }
+
+   tr.unreadpm td {
+     background: edition !important;
+     font-weight: 500;
+   }
+
+   tr.unreadpm td a {
+     font-weight: 500;
+   }
+
+   .users_reports_table tr:not(.colhead):not(.colhead_dark):nth-of-type(4n), .users_reports_table tr:not(.colhead):not(.colhead_dark):nth-of-type(4n+1) td {
+     background-color: bg-panel;
+   }
+
+   .torrent_table tr.colhead_dark td {
+     background: bg-deep;
+     color: link;
+   }
+
+   #better table tr:not(.colhead):not(.colhead_dark):hover td, #inbox #messageform table tr:not(.colhead):not(.colhead_dark):hover td, #log_table tr:not(.colhead):not(.colhead_dark):hover td, #rules table tr:not(.colhead):not(.colhead_dark):hover td, #torrents .vote_matches_table tr:not(.colhead):not(.colhead_dark):hover td, #userhistory table:not(.forum_post):not(.users_reports_table) tr:not(.colhead):not(.colhead_dark):hover td, .forum_list.border tr:not(.colhead):not(.colhead_dark):hover td, .wiki_log_table tr:not(.colhead):not(.colhead_dark):hover td, table.staff tr:not(.colhead):not(.colhead_dark):hover td, table.generic_table tr:not(.colhead):not(.colhead_dark):hover td {
+     background-color: bg-inset;
+   }
+
+   li.graph, #inbox #messageform table tr.colhead td {
+     background: bg-panel;
+     color: link;
+   }
+
+   #artist_information .colhead, #artist_information .head, #better table .rowa, #inbox #messageform table .rowa, #log_table .rowa, #rules table .rowa, #similar_artist_map .colhead, #similar_artist_map .head, #top10 .torrent_table .rowa, #torrents .torrent_description .colhead, #torrents .torrent_description .head, #torrents .vote_matches_table .rowa, #upload #dnulist .rowa, #upload #dnulist tr:not(.colhead):not(.colhead_dark):nth-of-type(2n) td, #userhistory table:not(.forum_post):not(.users_reports_table) .rowa, .collage_table .rowa, .forum_list.border .rowa, .request_table .rowa, .request_table tr:not(.colhead):not(.colhead_dark):nth-of-type(2n) td, .torrent_table .rowa, .users_reports_table .rowa, .wiki_log_table .rowa, table.staff .rowa, #top10 .torrent_table {
+     background: bg-panel;
+   }
+
+   #better table .rowb, #changelog .changelog_entry, #collage .create_form, #edit_collage, #filter_form, #friends .friends_table, #inbox #messageform table .rowb, #inbox #searchbox, #log_table .rowb, #questions .box2, #reportform, #reports .box, #rules table .rowb, #similar_artist_map, #staff .box, #top10 .torrent_table .rowb, #torrents .edit_form, #torrents .torrent_description, #torrents .vote_matches_table .rowb, #upload #content>div, #upload #dnulist .rowb, #user .edit_form:not(#userform), #userhistory table:not(.forum_post):not(.users_reports_table) .rowb, .collage_table .rowb, .forum_list.border .rowb, .inbox_message, .main_column table.forum_post, .request_table .rowb, .torrent_table .rowb, .torrent_table tr.torrent, .users_reports_table, .users_reports_table .rowb, .vertical_space.box, .wiki_log_table .rowb, table.forum_post, table.staff .rowb {
+     background: rowb;
+   }
+
+   #top10 .search_form {
+     background: bg-deep;
+   }
+
+   /* menus */
+   #menu ul li a:hover, [id^="nav_"].active a:hover, #userinfo_minor:hover li:hover a, ul#userinfo_username li:not(#nav_userinfo) a:hover {
+     color: teal !important;
+     text-decoration: underline;
+   }
+
+   [id^="nav_"].active a, #nav_userinfo.active a {
+     color: fg;
+     text-decoration: unset;
+   }
+
+   #userinfo_minor li, ul#userinfo_username li:not(#nav_userinfo) {
+     background: bg-panel;
+     border-left: 1px solid bg-inset;
+     border-right: 1px solid bg-inset;
+   }
+
+   #userinfo_minor li {
+     width: 10em;
+   }
+
+   #nav_donate a:hover, #nav_invite a:hover, #nav_upload a:hover, ul#userinfo_username li#nav_userinfo a:hover {
+     background-color: bg-inset;
+   }
+
+   ul#userinfo_username:hover li#nav_userinfo a {
+     color: fg !important;
+     background-color: bg-inset;
+   }
+
+   #menu ul li a {
+     color: fg;
+   }
+
+   /* borders */
+   #userinfo_minor li:last-of-type, ul#userinfo_username:hover li:last-of-type, .head, #staff .box h2 {
+     border-bottom: 1px solid bg-inset;
+   }
+
+   #better table, #inbox #messageform table, #log_table, #rules table, #top10 .torrent_table, #torrents .vote_matches_table, #upload #dnulist, #userhistory table:not(.forum_post):not(.users_reports_table), .collage_table, .forum_list.border, .request_table, .users_reports_table, .wiki_log_table, table.staff, table.generic_table, .torrent_table, #rules .rule_summary ul, #rules ul.rules, #artist .edit_form, #artist_information, #changelog .changelog_entry, #collage .create_form, #edit_collage, #filter_form, #friends .friends_table, #inbox #searchbox, #questions .box2, #reportform, #reports .box, #similar_artist_map, #staff .box, #torrents .edit_form, #torrents .torrent_description, #upload #content>div, #user .edit_form:not(#userform), .inbox_message, .sidebar .box, .vertical_space.box, table.forum_post, #top10 .search_form, #noty_bottomRight_layout_container li {
+     border: 1px solid bg-inset !important;
+   }
+
+   #better table td, #inbox #messageform table td, #log_table td, #rules table td, #top10 .torrent_table td, #torrents .vote_matches_table td, #upload #dnulist td, #userhistory table:not(.forum_post):not(.users_reports_table) td, .collage_table td, .forum_list.border td, .request_table td, .torrent_table td, .users_reports_table td, .wiki_log_table td, table.staff td, table.generic_table td, .last_edited {
+     border-top: 1px solid bg-inset !important;
+   }
+
+   :root .tooltipster-box {
+     border: 1px solid bg-inset;
+   }
+
+   :root .tooltipster-bottom .tooltipster-arrow-border {
+     border-bottom-color: bg-inset;
+   }
+
+   :root .tooltipster-left .tooltipster-arrow-border {
+     border-left-color: bg-inset;
+   }
+
+   :root .tooltipster-right .tooltipster-arrow-border {
+     border-right-color: bg-inset;
+   }
+
+   :root .tooltipster-top .tooltipster-arrow-border {
+     border-top-color: bg-inset;
+   }
+
+   #requests .search_form {
+	 border: 1px solid bg-inset;
+   }
+
+   /* buttons */
+   button, input[type="button"], input[type="submit"] {
+     background:
+       linear-gradient(180deg,
+       bg-inset 0,
+       bg-grad 1px,
+       bg-inset 2px,
+       bg-inset) !important;
+     border: 1px solid bg-inset;
+     color: fg;
+   }
+
+   button:hover, input[type="button"]:hover, input[type="submit"]:hover, button:focus, input[type="button"]:focus, input[type="submit"]:focus {
+     background:
+       linear-gradient(180deg,
+       bg-inset 0,
+       btn-shine 1px,
+       bg-grad 2px,
+       bg-inset) !important;
+     color: fg;
+     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+   }
+
+   button:active, input[type="button"]:active, input[type="submit"]:active {
+     background:
+       linear-gradient(180deg,
+       bg-deep 0,
+       bg-inset 1px,
+       bg-panel 2px,
+       bg-deep) !important;
+     color: muted;
+   }
+
+   a {
+     color: link;
+   }
+
+   h3, h3 a, .collage_table tr.colhead td {
+     color: h3;
+   }
+
+   h2 a, .header h2 a {
+     color: h3;
+   }
+
+   h2 a:hover, .header h2 a:hover {
+     color: h3;
+     filter: brightness(1.25);
+   }
+
+   ul.collage_images li a {
+     filter: unset;
+   }
+
+   hr {
+     border-width: 0 0 thin;
+     border-color: bg-inset;
+     border-style: solid;
+   }
+
+   .reportinfo_table blockquote, table.forum_post .colhead_dark td {
+     background: bg-panel;
+     border-color: bg-inset;
+     color: muted;
+   }
+
+   .forum_post.sticky_post .colhead_dark td {
+     background: bg-inset;
+     border-bottom-color: critical;
+     border-left-color: critical;
+     border-right-color: critical;
+     border-top-color: critical;
+     color: muted;
+   }
+
+   .forum_post.sticky_post .sticky_post_label {
+     color: sticky !important;
+   }
+
+   .inbox_message .head, .vertical_space.box .head {
+     background: bg-panel;
+     border: 1px solid bg-inset;
+     color: muted;
+   }
+
+   .forum_index a:hover, .tags a:hover {
+     color: teal;
+   }
+
+   .forum_post.forum_unread .colhead_dark td {
+     border-bottom: 0;
+     background: bg-inset;
+     color: muted;
+   }
+
+   strong.important_text, span[style*="color: red;"] {
+     color: critical !important;
+     font-weight: bold;
+   }
+
+   input[type="email"]:invalid, input[type="password"]:invalid, input[type="search"]:invalid, input[type="text"]:invalid, input[type="url"]:invalid, select:invalid, textarea:invalid {
+     outline: 2px solid critical;
+   }
+
+   #torrents table:not(.forum_post) .colhead_dark {
+     background: bg-panel !important;
+   }
+
+   .torrent_table tr.edition td {
+     color: h3 !important;
+     border-bottom: 1px solid bg-inset;
+   }
+
+   ul.collage_images img:hover {
+     border-color: bg-inset;
+   }
+
+   #forums .search_form .cat_list td.forum_cat strong, #userform td:not(.label)>strong, .donation_info_title, .head {
+     color: label;
+   }
+
+   .noty_buttons a, .quoteheader, strong.artists_label {
+     color: link;
+   }
+
+   #rules h4, #rules h5, #torrents table:not(.forum_post) .colhead_dark, .forum_index tr.colhead td, table.forum_list tr.colhead td, .box h4 {
+     color: label;
+   }
+
+   .sidebar .colhead_dark, .sidebar .head {
+     color: h3;
+   }
+
+   .noty_buttons a:hover, a:not(:has(img)):hover, h3 a:hover, #rules h4 a:hover, #rules h5 a:hover, #torrents table:not(.forum_post) .colhead_dark a:hover, .colhead a:hover, .sidebar .colhead_dark a:hover, .sidebar .head a:hover {
+     color: link;
+     filter: brightness(1.25) !important;
+   }
+
+   #torrents .vote_matches_table .colhead a:hover {
+     color: muted;
+   }
+
+   .log_upload a, span[style*="color: green;"] a {
+     color: upload;
+   }
+
+   #log_table .log_upload::before {
+     background: upload;
+   }
+
+   .log_deleted a, span[style*="color: red;"] a, input[type="checkbox"]:invalid+label, .new {
+     color: critical;
+   }
+
+   .invalid, .warning, .error {
+     color: danger;
+   }
+
+   #log_table .log_deleted::before {
+     background: critical;
+   }
+
+   .log_edited a, span[style*="color: blue;"] a {
+     color: teal;
+   }
+
+   #log_table .log_edited::before {
+     background: teal;
+   }
+
+   .normal a, #userinfo a {
+     color: fg;
+   }
+
+   #log_table .normal::before {
+     background: fg;
+   }
+
+   input[type="checkbox"]:invalid {
+     outline: 2px solid critical;
+   }
+
+   code {
+     background: bg-inset;
+     color: fg;
+   }
+
+   .rippywrap {
+     display: none !important;
+   }
+
+   .center_poll {
+     background-image: linear-gradient(180deg, h3, h4);
+   }
+
+   .remove a, .sign img, .vote_album_down, .vote_album_up, a.small_downvote, a.small_upvote, a.vote_artist_down, a.vote_artist_up, a.vote_tag_down, a.vote_tag_up, table.forum_post .colhead_dark td a[id*=quote], table.forum_post .colhead_dark td .post_id, #forums div.box.thin.clear .colhead_dark {
+     filter: hue-rotate(f-base-angle) saturate(.6) !important;
+   }
+
+   #logo a, #logo a:hover {
+     filter: hue-rotate(f-base-logo) saturate(.6) !important;
+   }
+
+   .unread, .unread_locked_sticky, .unread_sticky {
+     filter: hue-rotate(f-unread-angle) saturate(.9);
+   }
+
+   .remove a:hover {
+     filter: hue-rotate(f-remove-angle) saturate(.6);
+   }
+
+   a.small_upvote:hover, a.vote_artist_up:hover, a.vote_tag_up:hover, a.vote_album_up:hover {
+     filter: hue-rotate(f-up-angle) saturate(.6);
+   }
+
+   a.small_downvote:hover, a.vote_artist_down:hover, a.vote_tag_down:hover, a.vote_album_down:hover {
+     filter: hue-rotate(f-down-angle) saturate(.6);
+   }
+
+   #rules .rules li .rule_short, #rules div ul li>strong, #upload #dnulist tr:not(.colhead) td:first-of-type, .torrent_table .discog span>a:hover, .torrent_table .discog strong>a:hover, .torrent_table .group_info>a:hover {
+     color: link;
+   }
+
+   .torrent_links_block a, .torrent_table .group_torrent>td>span a, .torrent_table span a {
+     color: torrent-link !important;
+   }
+
+   .torrent_table .group_torrent>td>span a:hover, .torrent_table span a:hover {
+     color: torrent-link !important;
+     filter: brightness(1.25) !important;
+   }
+
+   .torrent_table tr.group_torrent:not(.edition) {
+     background-color: trnt;
+   }
+
+   #userform .sidebar #settings_sections a:hover, .torrent_links_block a:hover {
+     color: muted !important;
+   }
+
+   #userinfo {
+     background: bg-panel;
+     border-bottom: 0;
+   }
+
+   .torrent_table .discog strong>a {
+     font-weight: bolder;
+   }
+
+   .torrentdetails table .colhead_dark td {
+     color: link !important;
+   }
+
+   .tl_reported {
+     color: critical !important;
+   }
+
+   .tl_notice {
+     color: notice !important;
+   }
+
+   .tl_snatched {
+     color: snatched !important;
+   }
+
+   .alertbar a {
+     background-color: bg-inset;
+   }
+
+   .autocomplete-selected {
+     background: bg-inset;
+   }
+
+   .autocomplete-suggestions strong {
+     color: snatched;
+   }
+
+   #searchbars input, input[type="email"], input[type="password"], input[type="search"], input[type="text"], input[type="url"], textarea, .sidebar .box input[type="email"], .sidebar .box input[type="password"], .sidebar .box input[type="search"], .sidebar .box input[type="text"], .sidebar .box input[type="url"], .sidebar .box select, .sidebar .box textarea {
+     border: 1px solid bg-inset;
+     background-color: bg-inset;
+   }
+
+   #searchbars input:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="url"]:focus, select:focus, textarea:focus {
+     border: 1px solid link !important;
+     background-color: bg-inset;
+   }
+
+   #torrents .collage_table, #torrents .request_table, #torrents .vote_matches_table, .torrent_table tr.group {
+     background: bg-panel;
+   }
+
+   select {
+     background-color: bg-inset;
+     color: fg;
+   }
+
+   .sidebar .box {
+     background: bg-deep;
+   }
+
+   #content {
+     border: 0;
+     background: 0 0;
+   }
+
+   #menu ul li a:after {
+     background: none;
+   }
+
+   #userinfo_minor li:first-of-type, ul#userinfo_username:hover li:nth-of-type(3) {
+     border-top: 1px solid bg-inset;
+   }
+
+   blockquote {
+     border: 1px solid bg-inset;
+   }
+
+   #requests .thin .linkbox:nth-of-type(2) a:first-of-type, #top10 .thin .linkbox:nth-of-type(2) a, #user h3 a:not(:first-of-type), #wiki .thin .linkbox:first-of-type a, .random_links a {
+     background:
+       linear-gradient(180deg,
+       hsla(0, 0%, 100%, .02) 0,
+       hsla(0, 0%, 100%, 0));
+     border: 1px solid bg-inset;
+   }
+
+   #requests .thin .linkbox:nth-of-type(2) a:hover:first-of-type, #top10 .thin .linkbox:nth-of-type(2) a:hover, #user h3 a:hover:not(:first-of-type), #wiki .thin .linkbox:first-of-type a:hover, .random_links a:hover {
+     color: link;
+     filter: brightness(1.25);
+     border-color: bg-inset;
+   }
+
+   #better table tr, #inbox #messageform table tr, #log_table tr, #rules table tr, #top10 .torrent_table tr, #torrents .vote_matches_table tr, #upload #dnulist tr, #userhistory table:not(.forum_post):not(.users_reports_table) tr, .collage_table tr, .forum_list.border tr, .request_table tr, .torrent_table tr, .users_reports_table tr, .wiki_log_table tr, table.staff tr, table.generic_table tr {
+     border-left: 1px solid bg-inset !important;
+     border-right: 1px solid bg-inset !important;
+   }
+
+   #nav_subscriptions.new-subscriptions a {
+     background-image: none;
+     color: critical;
+     font-weight: 600;
+   }
+ }
