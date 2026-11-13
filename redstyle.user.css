@@ -1,7 +1,7 @@
 /* ==UserStyle==
  @name          flat & dark theme for red
  @namespace     github.com/SharpestPebble/css
- @version       2.0.1
+ @version       2.0.8
  @preprocessor  stylus
  @var checkbox enable_anim 'Disable CSS effects' 1
  @var checkbox enable_ratio 'Disable ratio/class colors' 1
@@ -157,7 +157,8 @@
    }
 
    tr.unreadpm td {
-     background: bg-inset !important;
+     background: edition !important;
+     font-weight: 500;
    }
 
    tr.unreadpm td a {
@@ -190,13 +191,17 @@
      background: rowb;
    }
 
+   #top10 .search_form {
+     background: bg-deep;
+   }
+
    /* menus */
-   #menu ul li a:hover, [id^="nav_"].active a, [id^="nav_"].active a:hover, #userinfo_minor:hover li:hover a, ul#userinfo_username li:not(#nav_userinfo) a:hover {
+   #menu ul li a:hover, [id^="nav_"].active a:hover, #userinfo_minor:hover li:hover a, ul#userinfo_username li:not(#nav_userinfo) a:hover {
      color: teal !important;
      text-decoration: underline;
    }
 
-   #nav_userinfo.active a {
+   [id^="nav_"].active a, #nav_userinfo.active a {
      color: fg !important;
      text-decoration: unset;
    }
@@ -225,7 +230,7 @@
    }
 
    /* borders */
-   #userinfo_minor li:last-of-type, ul#userinfo_username:hover li:last-of-type, .head {
+   #userinfo_minor li:last-of-type, ul#userinfo_username:hover li:last-of-type, .head, #staff .box h2 {
      border-bottom: 1px solid bg-inset;
    }
 
@@ -255,6 +260,10 @@
 
    :root .tooltipster-top .tooltipster-arrow-border {
      border-top-color: bg-inset;
+   }
+
+   #requests .search_form {
+	 border: 1px solid bg-inset;
    }
 
    /* buttons */
@@ -596,6 +605,6 @@
    #nav_subscriptions.new-subscriptions a {
      background-image: none;
      color: critical;
-     font-weight: 700;
+     font-weight: 600;
    }
  }
