@@ -1,7 +1,7 @@
 /* ==UserStyle==
  @name          flat & dark theme for red
  @namespace     github.com/SharpestPebble/css
- @version       2.0.10
+ @version       2.0.11
  @preprocessor  stylus
  @var checkbox enable_anim 'Disable CSS effects' 1
  @var checkbox enable_ratio 'Disable ratio/class colors' 1
@@ -191,7 +191,7 @@
      background: rowb;
    }
 
-   #top10 .search_form {
+   #top10 .search_form, #searchforum div, #searchthread div {
      background: bg-deep;
    }
 
