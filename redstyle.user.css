@@ -161,7 +161,7 @@
    }
 
    tr.unreadpm td a {
-     font-weight: 600;
+     font-weight: 500;
    }
 
    .users_reports_table tr:not(.colhead):not(.colhead_dark):nth-of-type(4n), .users_reports_table tr:not(.colhead):not(.colhead_dark):nth-of-type(4n+1) td {
