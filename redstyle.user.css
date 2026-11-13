@@ -1,7 +1,7 @@
 /* ==UserStyle==
  @name          flat & dark theme for red
  @namespace     github.com/SharpestPebble/css
- @version       2.0.12
+ @version       2.0.13
  @preprocessor  stylus
  @var checkbox enable_anim 'Disable CSS effects' 1
  @var checkbox enable_ratio 'Disable ratio/class colors' 1
@@ -242,7 +242,7 @@
      border-top: 1px solid bg-inset !important;
    }
 
-   :root .tooltipster-box {
+   :root .tooltipster-box, #requests .search_form, blockquote {
      border: 1px solid bg-inset;
    }
 
@@ -260,10 +260,6 @@
 
    :root .tooltipster-top .tooltipster-arrow-border {
      border-top-color: bg-inset;
-   }
-
-   #requests .search_form {
-	 border: 1px solid bg-inset;
    }
 
    /* buttons */
@@ -579,10 +575,6 @@
      border-top: 1px solid bg-inset;
    }
 
-   blockquote {
-     border: 1px solid bg-inset;
-   }
-
    #requests .thin .linkbox:nth-of-type(2) a:first-of-type, #top10 .thin .linkbox:nth-of-type(2) a, #user h3 a:not(:first-of-type), #wiki .thin .linkbox:first-of-type a, .random_links a {
      background:
        linear-gradient(180deg,
@@ -609,6 +601,6 @@
    }
 
    .forum_list.border tr:not([id*="post"]) td {
-     color: #afafaf;
+     color: muted;
    }
  }
