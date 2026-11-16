@@ -1,7 +1,7 @@
 /* ==UserStyle==
- @name          flat & dark theme for red
+ @name          Flat & Dark for RED
  @namespace     github.com/SharpestPebble/css
- @version       2.0.26
+ @version       2.1.7
  @preprocessor  stylus
  @var checkbox enable_anim 'Disable CSS effects' 1
  @var checkbox enable_ratio 'Disable ratio/class colors' 1
@@ -230,7 +230,7 @@
    }
 
    /* borders */
-   #userinfo_minor li:last-of-type, ul#userinfo_username:hover li:last-of-type, .head, #staff .box h2 {
+   #userinfo_minor li:last-of-type, ul#userinfo_username:hover li:last-of-type, .head, #staff .box h2, #torrents .torrent_description .head, #torrents .torrentdetails td {
      border-bottom: 1px solid bg-inset;
    }
 
@@ -260,6 +260,14 @@
 
    :root .tooltipster-top .tooltipster-arrow-border {
      border-top-color: bg-inset;
+   }
+
+   #userinfo_minor li:first-of-type, ul#userinfo_username:hover li:nth-of-type(3) {
+     border-top: 1px solid bg-inset;
+   }
+
+   .torrent_table tr.group_torrent td, .torrent_table tr.group td, .torrent_table tr.torrent td {
+     border-top: 1px solid bg-inset !important;
    }
 
    /* buttons */
@@ -385,6 +393,10 @@
 
    .noty_buttons a, .quoteheader, strong.artists_label {
      color: link;
+   }
+
+   .noty_text {
+     color: fg;
    }
 
    #rules h4, #rules h5, #torrents table:not(.forum_post) .colhead_dark, .forum_index tr.colhead td, table.forum_list tr.colhead td, .box h4 {
@@ -571,10 +583,6 @@
      background: none;
    }
 
-   #userinfo_minor li:first-of-type, ul#userinfo_username:hover li:nth-of-type(3) {
-     border-top: 1px solid bg-inset;
-   }
-
    #requests .thin .linkbox:nth-of-type(2) a:first-of-type, #top10 .thin .linkbox:nth-of-type(2) a, #user h3 a:not(:first-of-type), #wiki .thin .linkbox:first-of-type a, .random_links a {
      background:
        linear-gradient(180deg,
@@ -633,12 +641,12 @@
    input[type="checkbox"]:checked::after {
      content: "";
      position: absolute;
-     left: 4px;
+     left: 3px;
      top: 0px;
      width: 3px;
      height: 8px;
      border: solid bg-deep;
-     border-width: 0 2px 2px 0;
+     border-width: 0 3px 3px 0;
      transform: rotate(45deg) !important;
    }
 
